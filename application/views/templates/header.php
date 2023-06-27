@@ -21,16 +21,16 @@
                 <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo site_url("details/index") ?>">TABLEAU</a>
                 </li>
                 <li class="nav-item">
-                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo site_url("artiste/index") ?>">ARTISTES</a>
+                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo site_url("details/liste_artiste") ?>">ARTISTES</a>
                 </li>
                 <li class="nav-item">
-                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="#">A PROPOS</a>
+                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo base_url("landing/index")?>">A PROPOS</a>
                 </li>
                 <li class="nav-item">
-                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="#">CONTACT</a>
+                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="#footer">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="#">ACCUEIL</a>
+                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo base_url("landing/index")?>">ACCUEIL</a>
                 </li>
             </ul>
             <!-- Left links -->

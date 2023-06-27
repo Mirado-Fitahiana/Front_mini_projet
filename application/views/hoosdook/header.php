@@ -23,10 +23,10 @@
             </div>
             <ul class="main-menu">
             <li><a href="landing/tableau">Tableau</a></li>
-            <li><a href="#">Artistes</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="<?php echo base_url('Details/liste_artiste');?>">Artistes</a></li>
+            <li><a href="#contenue">A propos</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="<?php echo base_url('Landing/index');?>">Accueil</a></li>
             </ul>
             <ul class="right-menu">
             <li><input type="text" name="" id="" class="search" placeholder="Rechercher"></li>
