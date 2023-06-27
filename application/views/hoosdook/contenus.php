@@ -30,7 +30,7 @@
                 <div class="titre">
                     <h2>Que faisons-nous?</h2>
                 </div>
-                <div class="contenue">
+                <div class="contenue" id="contenue">
                     <p>
                         Découvrez l'incroyable fusion entre l'art et la technologie sur notre plateforme en ligne ! 
         Nous sommes une communauté passionnée qui offre aux artistes du monde entier une vitrine 

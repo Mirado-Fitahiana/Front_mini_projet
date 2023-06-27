@@ -1,5 +1,5 @@
     <footer>
-    <div class="footer">
+    <div class="footer" id="foote">
         <div class="log">
             <!-- <img id="HooSooDook" src="../HooSooDook__final_b.png" srcset="../HooSooDook__final_b.png 1x, ../HooSooDook__final_b@2x.png 2x"> -->
         </div>
