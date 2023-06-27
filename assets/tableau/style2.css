@@ -1,0 +1,175 @@
+:root{
+    --bodyBack:rgb(242, 242, 242);
+    --texColor:#1b2741;
+}
+*{
+   /* margin: 0; */
+   /* padding: 0; */
+   /* box-sizing: border-box; */
+   /* font-family: 'Releway', sans-serif; */
+}
+body{
+    background-color: var(--bodyBack);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+ }
+
+/* container*/
+.Web_1366__3 {
+    width: 80vw;
+   /* height: 80vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/****/
+.header{
+    width: 115%;
+    height: 150px;
+    text-align: center;
+}
+.header h1{
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(89,93,36,1);
+}
+.header .trie {
+    /*height: 40px;*/
+    margin-top: 15px;
+}
+.header .trie li{
+    display: inline;
+    margin: 62px;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(145,139,134,1);
+}
+
+.header .search {
+    height: 48px;
+    width: 236px;
+    background-color: #b9b97d;
+    right: 477px;
+    position: absolute;
+    margin-top: 6px;
+}
+
+/*.header .search .search-form {
+    text-align: center;
+}*/
+
+.header .search .search-form input,textarea {
+    background: none;
+    color: rgba(169,153,74,1); 
+    font-size: 18px;
+    display: block;
+}
+.header .search .search-form input[type="text"] {
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1px solid rgba(169,153,74,1);
+    width: 207px;
+}
+.header .search .search-form input[type="text"]:focus {
+   outline: none;
+}
+
+/****/
+/**products*/
+.Groupe_11{
+    width: 115%;
+    height: 70%;
+    /*display: flex;*/
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:50px;
+    /****/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 352px);
+}
+.Groupe_7{
+    position: relative;
+    /*background-color: aquamarine;*/
+    width: 355px;
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 20px 10px;
+    transition: -3s;
+}
+.image{
+    width: 324px;
+    height: 324px;
+    display: flex;
+    display: grid;
+    place-items:center ;
+}
+.image img{
+    width: 324px;
+    height: 324px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.161));
+}
+.titre{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.titre span{
+    font-family: Fugaz One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(169,99,74,1);
+}
+.auteur{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.auteur span{
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(145,139,134,1);
+}
+.pays{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pays span{
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    color: rgba(145,139,134,1);
+}
+
+
+/**css boite noir voir plus**/
+.VOIR_DETAIL_ca{
+    right: 14px;
+      position: absolute;
+      width: 87;
+      height: 34;
+      background-color: rgba(0,0,0,1);
+      padding: 10px 20px;
+}
+.VOIR_DETAIL_ca a{
+      font-family: Fugaz One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      color: rgba(255,255,255,1);
+      text-decoration: none;
+  }
+  /**--------------------------*/

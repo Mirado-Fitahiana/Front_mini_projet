@@ -1,0 +1,652 @@
+body{
+    background-color:rgb(223, 195, 184) ;
+}
+body p{
+    color :black;
+}
+/* partie 1 */
+.image{
+    position: relative;
+    float: right;
+    width: 30 pc!important;
+    height: 30pc;
+    margin-right: 15pc;
+}
+.image img{
+    position: absolute;
+    right: 0.5pc;
+    width: inherit;
+    height:inherit;
+}
+.peinture{
+    z-index: -1;
+    scale: 2;
+}
+a{
+    text-decoration: none;
+}
+.texte{
+    margin-left: 10pc;
+    width: 40pc;
+    height: 20pc;
+    float: left;
+    margin-top: 10pc;
+}
+
+.introduction .texte .title{
+    font-size: 2.3pc;
+    margin-bottom: 2pc;
+    font-family: inherit;
+    color: black;
+}
+
+.explication{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9pc;
+    color: black;
+    line-height: 15pt;
+}
+
+.voir {
+    font-family: 'Segoe UI';
+    color: white;
+    background-color: rgb(142, 147, 81);
+    width: 6pc;
+    height: 2pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20pc;
+    margin-top: 2pc;
+    
+}
+.introduction{
+    height: 30pc;
+}
+/* partie 1 */
+
+
+/* partie 2 */
+.information{
+    height: 40pc;
+    width: 100vw;
+    background-color: white;
+}
+.rond{
+    width: 25pc;
+    height: 25pc;
+    position: absolute;
+    background-color: rgb(142, 147, 81);
+    border-radius: 100pc;
+    margin-top: 2pc;
+}
+.information_texte{
+    padding-top: 8pc;
+    float: right;
+    width: 40pc;
+    margin-right: 5pc;
+    margin-top: auto;
+}
+.information_image{
+    float: left;
+    height: inherit;
+    width: 40pc;
+}
+.olona{
+    position:absolute;
+    width: 40pc;
+    height: 30pc;
+}
+.titre{
+    font-family: 'Fugaz One';
+    font-size: 1.5pc;
+    color: #A9634A;
+}
+.contenue{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8pc;
+}
+/* partie 2 */
+.info{
+    height: 40pc;
+    width: 100vw;
+    position: relative;
+    left: 0pc;
+}
+/* partie 3 */
+.fonction{
+    position: absolute;
+    width: inherit;
+    top: 30pc;
+    height: 20pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fonc{
+    width: 20pc;
+    height: 20pc;
+    background-color: rgb(253, 253, 253);
+    float: left;
+    box-shadow: 0 0 0 3px rgb(219, 218, 218);
+    margin-left: 1pc;
+    border-radius: 1pc;
+    text-align: center;
+}
+.t{
+    font-size: 15pt;
+    color: #8E9352;
+    font-family: 'Russo One';
+    padding-top: 2pc;
+}
+.c{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8pc;
+    line-height: 18px;
+    padding: 2pc;
+}
+.exemples{
+    height: 23pc;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20pc;
+    text-align: center;
+}
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    font-family: 'Microsoft JhengHei UI';
+    text-align: center;
+    color: #A9634A;
+    padding-top: 1pc;
+    }
+
+.tableaux{
+    width: 10pc;
+    height: 10pc;
+    background-color: rgb(123, 27, 27);
+    margin-right: 6pc;
+
+}
+.tab_img{
+    height: 10pc;
+}
+.tab_titre p{
+    color: #A9634A;
+    margin: 4px;
+    margin-bottom: 6px;
+    font-family: cursive;
+}
+.tab_auteur p{
+    /* font-family: 'Microsoft JhengHei UI'; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #424242;
+    font-size: 1pc;
+}
+
+/* partie 3 */
+@media screen and (min-width:902px) and (max-width:1417px) {
+    /* partie 1 */
+    .introduction .texte{
+        width: 20pc;
+    }
+    .information_texte{
+        width: 20pc;
+    }
+    .image{
+        margin-right: 5pc;
+    }
+    .texte{
+        margin-left: 2pc;
+    }
+    /* partie 1 */
+            /* partie 2 */
+            .information{
+                background-color: white;
+            }
+            .information_image{
+               width: 30pc;
+            }
+            .information_texte{
+                
+                width: 20pc;
+            }
+            .fonction{
+                width: 55pc;
+                margin-left: 5pc;
+            }
+            .info{
+                margin-left: 0pc;
+            }
+            .fonc{
+                height: 18.5pc;
+            }
+             /* partie 2 */
+
+}
+@media screen and (min-width:671px) and (max-width:901px) {
+    /* partie 1 */
+    .image{
+        width: 16pc;
+        height: 20pc;
+        margin-top: 8pc;
+    }
+    .peinture{
+        scale: 4;
+    }
+    .introduction .texte{
+        width: 20pc;
+    }
+    .image{
+        margin-right: 3pc;
+    }
+    .texte{
+        margin-left: 2pc;
+    }
+    /* partie 1 */
+        /* partie 2 */
+        .information{
+            background-color: white;
+        }
+        .information_image{
+           width: 15pc;
+        }
+        .information_texte{
+            
+            width: 20pc;
+        }
+        .rond{
+            width: 15pc;
+            height: 15pc;
+            margin-top: 10pc;
+        }
+        .fonction{
+            margin-left: 2pc;
+            width: 45pc;
+        }
+        .fonc{
+            width: 17.5pc;
+            height: 22pc;
+        }
+        .exemples{
+            padding-left: 2pc;
+        }
+
+         /* partie 2 */
+}
+@media screen and (min-width:578px) and (max-width:670px) {
+    /* partie 1 */
+    .image{
+        width: 13pc;
+        height: 17pc;
+        margin-top: 8pc;
+    }
+    .introduction .texte{
+        width: 15pc;
+    }
+    .image{
+        margin-right: 3pc;
+    }
+    .peinture{
+        scale: 5;
+    }
+    .texte{
+        margin-left: 2pc;
+    }
+    /* partie 1 */
+        /* partie 2 */
+        .information{
+            background-color: transparent;
+            margin-top: 5pc;
+        }
+        .information_image{
+           display: none;
+        }
+        .information_texte{
+            padding-top: 4pc;
+            width: 30pc;
+            margin-top: auto;
+           
+            text-align: center;
+        }
+        .fonction{
+            display:table-column;
+            margin-left: 9pc;
+        }
+        .tab{
+            display: table;
+            margin-left: 13pc;
+        }
+        .tableaux{
+            margin-bottom: 9pc;
+        }
+        .exemples{
+            margin-top: 60pc;
+            height:fit-content;
+        }
+        .info{
+            margin-left: 0pc;
+        }
+        .fonc{
+            margin-bottom: 3pc;
+            width: 17.5pc;
+            height: 17.5pc;
+           float: none;
+        }
+        .contenue{
+            color: white;
+        }
+         /* partie 2 */
+}
+@media screen and (min-width:455px)  and (max-width:578px) {
+    /* partie 1 */
+    .image {
+        position: relative;
+        float: right;
+        width: 30 pc !important;
+        height: 30pc;
+        margin-right: 0pc;
+        z-index: -1;
+      }
+    .introduction .texte{
+        width: 27pc;
+        height: 30pc;
+        text-align: center;
+    }
+    .voir{
+        margin-left: 11pc;
+    }
+    .texte{
+        margin-top: 6pc;
+        color: white;
+        opacity: 12;
+        margin-left:1pc ;
+    }
+    .information{
+        height: 40pc;
+    }
+/* partie 1 */
+        /* partie 2 */
+        .information{
+            background-color: transparent;
+            width: 30pc;
+        }
+        .information_image{
+           display: none;
+        }
+        .information_texte{
+            padding-top: 2pc;
+            width: 25pc;
+            margin-top: auto;
+            margin-right: 1.7pc;
+            text-align: center;
+        }
+        .exemples{
+            margin-top: 60pc;
+            height:fit-content;
+        }
+        .info{
+            margin-left: 1pc;
+        }
+        .fonction{
+            display:table-column;
+            margin-left: 6pc;
+        }
+        .tab{
+            display: table;
+            margin-left: 10pc;
+        }
+        .tableaux{
+            margin-bottom: 9pc;
+        }
+        .fonc{
+            margin-bottom: 3pc;
+            width: 17.5pc;
+            height: 17.5pc;
+           float: none;
+        }
+        .contenue{
+            color: white;
+        }
+         /* partie 2 */
+}
+@media screen and (min-width:410px)  and (max-width:454px) {
+    /* partie 1 */
+    .image {
+        position: relative;
+        float: right;
+        width: 30 pc !important;
+        height: 30pc;
+        margin-right: 0pc;
+        z-index: -1;
+      }
+    .introduction .texte{
+        width: 24pc;
+        height: 30pc;
+        text-align: center;
+    }
+    .voir{
+        margin-left: 9pc;
+    }
+    .texte{
+        margin-top: 6pc;
+        color: white;
+        opacity: 12;
+        margin-left:1pc ;
+    }
+/* partie 1 */
+        /* partie 2 */
+        .information{
+            background-color: transparent;
+            width: 25pc;
+            height: 40pc;
+        }
+        .information_image{
+           display: none;
+        }
+        .information_texte{
+            padding-top: 2pc;
+            width: 22pc;
+            margin-top: auto;
+            margin-right: 1pc;
+            text-align: center;
+        }
+        .info{
+            margin-left: 1pc;
+        }
+        .fonction{
+            display:table-column;
+            margin-left: 3pc;
+        }
+        .tab{
+            display: table;
+            margin-left: 8pc;
+        }
+        .tableaux{
+            margin-bottom: 9pc;
+        }
+        .exemples{
+            margin-top: 60pc;
+            height:fit-content;
+        }
+        .fonc{
+            margin-bottom: 3pc;
+            width: 17.5pc;
+            height: 17.5pc;
+           float: none;
+           font-size: 0.5pc;
+           color: #424242;
+        }
+        .contenue{
+            color: white;
+        }
+         /* partie 2 */
+}
+@media screen and (min-width:361px)  and (max-width:410px) {
+    /* partie 1 */
+    .image {
+        position: relative;
+        float: right;
+        width: 30 pc !important;
+        height: 30pc;
+        margin-right: 0pc;
+        z-index: -1;
+      }
+    .introduction .texte{
+        width: 22pc;
+        height: 30pc;
+        text-align: center;
+    }
+    .voir{
+        margin-left: 7pc;
+    }
+    .texte{
+        margin-top: 6pc;
+        color: white;
+        opacity: 12;
+        margin-left:1pc ;
+    }
+    /* partie 1 */
+        /* partie 2 */
+        .information{
+            background-color: transparent;
+            width: 23pc;
+            height: 40pc;
+        }
+        .information_image{
+           display: none;
+        }
+        .information_texte{
+            padding-top: 2pc;
+            width: 22pc;
+            margin-top: auto;
+            margin-right: 0.5pc;
+            text-align: center;
+        }
+        .info{
+            margin-left: 0.5pc;
+        }
+        .fonction{
+            display:table-column;
+            margin-left: 6pc;
+        }
+        .tab{
+            display: table;
+            margin-left: 7pc;
+        }
+        .tableaux{
+            margin-bottom: 9pc;
+        }
+        .fonc{
+            margin-bottom: 3pc;
+            width: 10pc;
+            height: 10pc;
+           float: none;
+        }
+        .exemples{
+            margin-top: 30pc;
+            height:fit-content;
+        }
+        .t {
+            font-size: 0.5pc;
+        }
+        .c{
+            padding: 2%;
+            font-size: 0.4pc;
+        }
+        .contenue{
+            color: white;
+        }
+         /* partie 2 */
+         .introduction .texte .title{
+            font-size: 1.3pc;
+            margin-bottom: 2pc;
+            font-family: inherit;
+            color: white;
+        }
+}
+@media screen  and (max-width:360px) {
+    /* partie 1 */
+    .introduction .texte .title{
+        font-size: 1.3pc;
+        margin-bottom: 2pc;
+        font-family: inherit;
+        color: white;
+    }
+    .image {
+        position: relative;
+        float: right;
+        width: 30 pc !important;
+        height: 30pc;
+        margin-right: 0pc;
+        z-index: -1;
+      }
+    .introduction .texte{
+        width: 22pc;
+        height: 30pc;
+        text-align: center;
+    }
+    .voir{
+        margin-left: 7pc;
+    }
+    .texte{
+        margin-top: 4pc;
+        color: white;
+        opacity: 12;
+        margin-left: 0pc;
+    }
+/* partie 1 */
+        /* partie 2 */
+        .information{
+            background-color: transparent;
+            width: 19pc;
+            height: 40pc;
+        }
+        .information_image{
+           display: none;
+        }
+        .information_texte{
+            padding-top: 2pc;
+            width: 15pc;
+           margin-right: 2pc;
+            text-align: center;
+        }
+        .info{
+            margin-left: 2pc;
+        }
+        .fonction{
+            display:table-column;
+            margin-left: 3pc;
+        }
+        .tab{
+            display: table;
+            margin-left: 5pc;
+        }
+        .tableaux{
+            margin-bottom: 9pc;
+        }
+        .fonc{
+            margin-bottom: 3pc;
+            width: 10pc;
+            height: 10pc;
+           float: none;
+        }
+        .exemples{
+            margin-top: 30pc;
+            height:fit-content;
+        }
+        .t {
+            font-size: 0.5pc;
+        }
+        .c{
+            padding: 2%;
+            font-size: 0.4pc;
+        }
+        .contenue{
+            color: white;
+        }
+         /* partie 2 */
+}
