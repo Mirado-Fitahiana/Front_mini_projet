@@ -1,0 +1,206 @@
+body {
+    height: auto;
+  }
+  
+  .haut { 
+    background: #000;
+    height: 100px;
+  }
+  
+  .gauche {
+    height: 100%;
+  }
+  
+  .detail {
+    height: 100%;
+  }
+  
+  /* .img1 {
+    background: #4628ca;
+    width: 200px;
+    height: 200px;
+    margin: 10% auto;
+  } */
+  
+  
+  .c1 {
+    border: 1px solid rgb(247, 217, 217);
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+  }
+  
+  .lg1 {
+    height: 270px;
+  }
+
+  .lg2 {
+    position: relative;
+    height: 100%;
+    background-image: url(../image/n_f86c44f3657345a8906563a68c5b_v.png);
+    background-size: 150%;
+    background-position-y: 100%;
+    background-position-x: 70%;
+  }
+  
+  .nom {
+    height: 25px;
+  }
+  .nom h2 {
+    text-align: center;
+  }
+  
+  .lieu {
+    height: 30px;
+  }
+  
+  .descri {
+    padding: 10px;
+  }
+  
+  .descri span {
+    font-size: small;
+  }
+  
+  .imbas {
+    height: 192px;
+    background-image: url(../image/n_f86c44f3657345a8906563a68c5b.png);
+    background-size: 120%;
+    background-position-y: 25%;
+    background-position-x: 50%;
+  }
+  
+  .titre {
+    height: 90px;
+  }
+  
+  .del {
+    padding: 30px;
+  }
+  
+  #text1 span h4,
+  #text1 span p {
+    text-align: center;
+  }
+  
+  .art1 {
+    background: transparent;
+    width: 85%;
+    height: 160px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .imgAut {
+    width: 70%;
+    height: 80%;
+    margin-left: 17%;
+  }
+  
+  .id1 {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.5s;
+    overflow: visible;
+  }
+
+  .id1:hover {
+    filter: grayscale(0%);
+    transition: 2s;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 110%;
+    transition: 1.5s;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #text1 span h4 {
+    color: rgba(89,93,36,1);
+  }
+  #text1 span p {
+    font-size: smaller;
+    color: rgba(145,139,134,1);
+  }
+
+  .nom h2 {
+    color: rgba(169,99,74,1);
+  }
+
+  .descri span {
+    color: rgba(145,139,134,1);
+    font-size: small;
+  }
+
+  .artTitle span h5 {
+    color: rgba(89,93,36,1);
+  }
+
+  .artTitle span h6 {
+    color: rgba(145,139,134,1);
+  }
+
+  #btn {
+    background-position-x: right;
+    background-position-y: 100%;
+  }
+
+  .voir{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #241f1f;
+    color: #ebdbdb;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    text-decoration: none;
+    width: 89px;
+    height: 33px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 12px;
+    visibility: visible;
+  }
+
+  .artTitle {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artTitle h5 {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 20px;
+    color: #a9634a;
+    margin-bottom: 7px;
+}
+
+.artTitle h6 {
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    font-size: 12px;
+    color: #918b86;
+    margin-bottom: 40px;
+}
+
+/* .fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+} */
+
+.col-sm {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.col-sm.visible {
+  opacity: 1;
+}
