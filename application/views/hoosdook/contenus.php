@@ -75,42 +75,21 @@
         <h3>QUELQUES EXTRAITS</h3>
         <br>
         <div class="tab">
-            <div class="tableaux">
-                <div class="tab_img"></div>
-                <div class="tab_titre">
-                    <p>BAOBAB DE MAJUNGA</p>
+            <?php 
+                for ($i=0; $i <count($image) ; $i++) { ?>
+                <div class="tableaux">
+                    <div class="tab_img">
+                        <img src="<?php echo base_url("assets/image/")."/".$image[$i]['painting_image'];?>" style = "height:160px;width:160px;">
+                    </div>
+                        <div class="tab_titre">
+                            <p><?php echo $image[$i]['paintingname'] ;?></p>
+                        </div>
+                    <div class="tab_auteur">
+                    <p><?php echo $image[$i]['artistname']?>, <?php echo $image[$i]['artist_adress']?></p>
+                    </div>
                 </div>
-                <div class="tab_auteur">
-                    <p>Rakoto Jean, Madagasikara</p>
-                </div>
-            </div>        
-            <div class="tableaux">
-                <div class="tab_img"></div>
-                <div class="tab_titre">
-                    <p>BAOBAB DE MAJUNGA</p>
-                </div>
-                <div class="tab_auteur">
-                    <p>Rakoto Jean, Madagasikara</p>
-                </div>
-            </div>         
-            <div class="tableaux">
-                <div class="tab_img"></div>
-                <div class="tab_titre">
-                    <p>BAOBAB DE MAJUNGA</p>
-                </div>
-                <div class="tab_auteur">
-                    <p>Rakoto Jean, Madagasikara</p>
-                </div>
-            </div>          
-            <div class="tableaux">
-                <div class="tab_img"></div>
-                <div class="tab_titre">
-                    <p>BAOBAB DE MAJUNGA</p>
-                </div>
-                <div class="tab_auteur">
-                    <p>Rakoto Jean, Madagasikara</p>
-                </div>
-            </div>   
+                <?php }
+            ?>       
         </div>
         
     </div>

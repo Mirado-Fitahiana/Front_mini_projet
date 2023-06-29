@@ -22,7 +22,7 @@
             <img src="<?php echo base_url('assets/header/image/logo.png') ?>" alt="">
             </div>
             <ul class="main-menu">
-            <li><a href="landing/tableau">Tableau</a></li>
+            <li><a href="Mirado/tableau">Tableau</a></li>
             <li><a href="<?php echo base_url('Details/liste_artiste');?>">Artistes</a></li>
             <li><a href="#contenue">A propos</a></li>
             <li><a href="#footer">Contact</a></li>

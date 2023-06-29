@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(242,242,424);
+}
+
+.title {
+  color: rgb(159,102,79);
+  font-family: initial;
+  font-size: 70px;
+}
+
+.cadre {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 6px 10px 0px rgb(195,195,195);
+}
+
+.custom {
+  background-color: rgb(242,242,242);
+}
+
+.card {
+  border: 0px;
+}
+
+.name {
+  font-size: 10px;
+  margin: 0px;
+}
+
+.btn-custom {
+  color: rgb(255,255,255);
+  /*background: rgb(143,147,90);*/
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  color: rgb(143,147,90);
+  background-color: white;
+  border-color: rgb(143,147,90);
+}
+
+.btn-custom {
+  color: white;
+  background: rgb(143,147,90);
+  border: 2px solid rgb(143,147,90);
+  border-radius: 10px;
+}
+
+.btn-custom-2 {
+  color: rgb(143,147,90);
+  background: rgb(255,255,255);
+  border: 2px solid rgb(143,147,90);
+  border-radius: 10px;
+}
+
+.btn-custom-C {
+  background: transparent;
+  border: none;
+}
+
+.custom_image{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+
+.warning {
+  background: url(../img/istockphoto-162714310-612x612.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6.6%;
+  display: flex;
+  flex-direction: column;
+}
+
+.warning img {
+  width: 100%;
+}
+
+.image_content{
+  flex-basis: auto;
+  width: 744.004px;
+}

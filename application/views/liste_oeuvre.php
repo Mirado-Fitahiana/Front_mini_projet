@@ -49,6 +49,53 @@
         .centre{
             padding: 80px;
         }
+        .pagination-outer
+        {
+        text-align: center;
+        }
+        .pagination{
+            font-family: 'Bungee Inline', cursive;
+            display: inline-flex;
+            position: relative;
+        }
+        .pagination li a.page-link{
+            color: #222;
+            background: transparent;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 25px;
+            padding: 0;
+            margin: 0 10px;
+            border: none;
+            display: block;
+            transition: all 0.4s ease 0s;
+        }
+        .pagination li:first-child a.page-link,
+        .pagination li:last-child a.page-link{
+            color: #777;
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 400;
+        }
+        .pagination li a.page-link:hover,
+        .pagination li a.page-link:focus,
+        .pagination li.active a.page-link:hover,
+        .pagination li.active a.page-link{
+            color: #1eaa9e;
+            background: transparent;
+            text-shadow: 3px 3px rgba(0,0,0,0.2);
+            transform: rotate(10deg);
+        }
+        @media only screen and (max-width: 480px){
+            .pagination{
+                font-size: 0;
+                display: inline-block;
+            }
+            .pagination li{
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
     </style>
 </head>
 
@@ -165,6 +212,27 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+        <nav class="pagination-outer" aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+        </nav>
+        </div>
     </div>
     <footer>
     <div class="footer" id="foote">
@@ -208,7 +276,7 @@
           <a href="#container"><span>
             Revenir en haut
           </span></a>
-          </div>
+        </div>
     </div>
     </footer>
 </body>
