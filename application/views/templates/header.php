@@ -1,3 +1,4 @@
+
 <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,7 +19,7 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo site_url("details/index") ?>">TABLEAU</a>
+                <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo site_url("Mirado/tableau") ?>">TABLEAU</a>
                 </li>
                 <li class="nav-item">
                 <a style="color: rgba(169,99,74,1);text-decoration: none;" class="nav-link" href="<?php echo site_url("details/liste_artiste") ?>">ARTISTES</a>

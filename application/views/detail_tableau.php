@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Hoosd</title>
+    <link rel="stylesheet" href="<?php echo base_url('assets/fandresena/bootstrap/css/bootstrap.min.css'); ?> ">
+    <link rel="stylesheet" href="<?php echo site_url('assets/fandresena/fonts/fontawesome-all.min.css'); ?> ">
+    <link rel="stylesheet" href="<?php echo site_url('assets/fandresena/css/dh-card-image-left-dark.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets/fandresena/css/Fandresena.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/header/fontawesome-5/css/all.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/footer/index.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/detail_artiste/bootstrap-5.0.2/css/bootstrap.min.css') ?>">
@@ -14,7 +18,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/detail_artiste/fonts/fontawesome-all.min.css')?>">
 </head>
 
-<body>
+<body class="p-5 custom">
     <div class="container">
         <div>
             <p class="small">La vente de ce tableau permettra d'offrir un kit scolaire à un enfant</p>
@@ -22,24 +26,24 @@
         <div class="row">
             <div class="col-8 p-3 image_content">
                 <div class="warning m-3">
-                    <img src="<?php echo base_url('assets/detail_artiste/image/n_4646626_polish-20210623-2205@2x.png')?>" class="Cadreur">
+                    <img src="<?php echo site_url('assets/fandresena/img/n_4646626_polish-20210623-2205@2x.png'); ?>" class="Cadreur">
                 </div>
                 <div class="cadre p-3">
                     <div class="row m-auto">
                         <div class="col m-auto">
-                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo base_url('assets/detail_artiste/image/istockphoto-162714310-612x612 copie 2.png')?>')"><img class="card-img-top w-100 d-block" src="<?php echo base_url('assets/detail_artiste/image/Untitled.png') ?>"></button></div>
+                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo site_url('assets/fandresena/img/istockphoto-162714310-612x612 copie 2.png'); ?>')"><img class="card-img-top w-100 d-block" src="<?php echo site_url('assets/fandresena/img/Untitled.png');?>"></button></div>
                         </div>
                         <div class="col m-auto">
-                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo base_url('assets/detail_artiste/image/istockphoto-162714310-612x612 copie 3.png')?>')"><img class="card-img-top w-100 d-block" src="<?php echo base_url('assets/detail_artiste/image/z.png') ?>"></button></div>
+                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo site_url('assets/fandresena/img/istockphoto-162714310-612x612 copie 3.png'); ?>')"><img class="card-img-top w-100 d-block" src="<?php echo site_url('assets/fandresena/img/z.png');?>"></button></div>
                         </div>
                         <div class="col m-auto">
-                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo base_url('assets/detail_artiste/image/istockphoto-162714310-612x612 copie 4.png')?>')"><img class="card-img-top w-100 d-block" src="<?php echo base_url('assets/detail_artiste/image/Untitled.png') ?>"></button></div>
+                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo site_url('assets/fandresena/img/istockphoto-162714310-612x612 copie 4.png'); ?>')"><img class="card-img-top w-100 d-block" src="<?php echo site_url('assets/fandresena/img/Untitled.png');?>"></button></div>
                         </div>
                         <div class="col m-auto">
-                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo base_url('assets/detail_artiste/image/istockphoto-162714310-612x612 copie.png')?>')"><img class="card-img-top w-100 d-block" src="<?php echo base_url('assets/detail_artiste/image/z.png')?>"></button></div>
+                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo site_url('assets/fandresena/img/istockphoto-162714310-612x612 copie.png'); ?>')"><img class="card-img-top w-100 d-block" src="<?php echo site_url('assets/fandresena/img/z.png');?>"></button></div>
                         </div>
                         <div class="col m-auto">
-                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo base_url('assets/detail_artiste/image/istockphoto-162714310-612x612.png')?>?>')"><img class="card-img-top w-100 d-block" src="<?php echo base_url('assets/detail_artiste/image/z.png')?>"></button></div>
+                            <div class="card"><button class="btn-custom-C" onclick="changeImageURL('<?php echo site_url('assets/fandresena/img/istockphoto-162714310-612x612.png'); ?>')"><img class="card-img-top w-100 d-block" src="<?php echo site_url('assets/fandresena/img/z.png');?>"></button></div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +54,7 @@
                 </div>
                 <div class="p-3">
                     <div class="row">
-                        <div class="col-xxl-2"><img src="<?php echo base_url('assets/detail_artiste/image/n_b490460fe517175d0e866e8cf2d0@2x.png')?>"></div>
+                        <div class="col-xxl-2"><img src="<?php echo site_url('assets/img/n_b490460fe517175d0e866e8cf2d0@2x.png'); ?>"></div>
                         <div class="col align-items-center m-auto p-1">
                             <div>
                                 <p class="name"><strong><span style="color: rgb(82, 82, 82); background-color: rgb(242, 242, 242);">RAKOTOZAFY BERTINE</span></strong></p>
@@ -89,6 +93,8 @@
             </div>
         </div>
     </div>
+    <script src="<?php echo site_url('assets/fandresena/bootstrap/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo site_url('assets/fandresena/js/cadre.js'); ?>"></script>
     <footer>
     <div class="footer" id="foote">
         <div class="log">
@@ -142,6 +148,7 @@
     <script src="<?php echo base_url('assets/detail_artiste/bootstrap/js/bootstrap.min.js')?>"></script>
     <script src="<?php echo base_url('assets/detail_artiste/js/card.js') ?>"></script>
     <script src="<?php echo base_url('assets/detail_artiste/bootstrap-5.0.2/js/bootstrap.bundle.min.js') ?>"></script>
+
 </body>
 
 </html>

@@ -27,6 +27,11 @@ class Details extends CI_Controller{
         $this->load->view('liste_oeuvre');
         //$this->load->view('templates/footer');
     }
+
+    public function detail_tableau(){
+        $this->load->view('templates/header');
+        $this->load->view('detail_tableau'); 
+    }
 }
 
 ?>
