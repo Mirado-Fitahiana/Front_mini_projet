@@ -49,57 +49,12 @@
         .centre{
             padding: 80px;
         }
-        .pagination-outer
-        {
-        text-align: center;
-        }
-        .pagination{
-            font-family: 'Bungee Inline', cursive;
-            display: inline-flex;
-            position: relative;
-        }
-        .pagination li a.page-link{
-            color: #222;
-            background: transparent;
-            font-size: 25px;
-            font-weight: 400;
-            line-height: 25px;
-            padding: 0;
-            margin: 0 10px;
-            border: none;
-            display: block;
-            transition: all 0.4s ease 0s;
-        }
-        .pagination li:first-child a.page-link,
-        .pagination li:last-child a.page-link{
-            color: #777;
-            font-size: 25px;
-            line-height: 25px;
-            font-weight: 400;
-        }
-        .pagination li a.page-link:hover,
-        .pagination li a.page-link:focus,
-        .pagination li.active a.page-link:hover,
-        .pagination li.active a.page-link{
-            color: #1eaa9e;
-            background: transparent;
-            text-shadow: 3px 3px rgba(0,0,0,0.2);
-            transform: rotate(10deg);
-        }
-        @media only screen and (max-width: 480px){
-            .pagination{
-                font-size: 0;
-                display: inline-block;
-            }
-            .pagination li{
-                display: inline-block;
-                vertical-align: top;
-            }
-        }
     </style>
 </head>
 
 <body>
+    <?php ?>
+   
     <div class="container">
         <div class="titre">
             <div id="text1">
@@ -111,128 +66,31 @@
         </div>
         <div class="centre">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="vue">
-                            <a href="#">VOIR DETAIL</a>
+                <?php
+                    foreach($result as $val) { ?>
+                     
+                       <div class="col-md-4">
+                            <div class="a1">
+                                <div class="vue">
+                                    <a href="#">VOIR DETAIL</a>
+                                </div>
+                                <div class="s1">
+                                    <img class="im" src="<?php echo base_url('assets/image')."/".$val->painting_image; ?>" alt="tsisy" >
+                                </div>
+                                <div class="nom">
+                                    <h5><?=$val->paintingname?></h5>
+                                    <h6 style="font-size: medium;"><?=$val->artistname?></h6>
+                                    <h6><?=$val->artist_adress?></h6>
+                                </div>
                             </div>
-                        <div class="s1">
-                            <img class="im" src="<?php echo base_url('assets/detail_artiste/image/baobab.png') ?>" alt="tsisy">
-                            
                         </div>
-                        <div class="nom">
-                            <h5>BAOBAB DE MAHAJANGA</h5>
-                            <h6 style="font-size: medium;">RAKOTO JEAN</h6>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="vue">
-                            <a href="#" >VOIR DETAIL</a>
-                            </div>
-                        <div class="s1">
-                            <img class="im" src="<?php echo base_url('assets/detail_artiste/image/baobab.png') ?>" alt="tsisy">
-                            
-                        </div>
-                        <div class="nom">
-                            <h5>BAOBAB DE MAHAJANGA</h5>
-                            <h6 style="font-size: medium;">RAKOTO JEAN</h6>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="vue">
-                            <a href="#" >VOIR DETAIL</a>
-                            </div>
-                        <div class="s1">
-                            <img class="im" src="<?php echo base_url('assets/detail_artiste/image/baobab.png') ?>" alt="tsisy">
-                            
-                        </div>
-                        <div class="nom">
-                            <h5>BAOBAB DE MAHAJANGA</h5>
-                            <h6 style="font-size: medium;">RAKOTO JEAN</h6>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
+                  <?php 
+                    }  
+                ?>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="vue">
-                            <a href="#" >VOIR DETAIL</a>
-                            </div>
-                        <div class="s1">
-                            <img class="im" src="<?php echo base_url('assets/detail_artiste/image/baobab.png') ?>" alt="tsisy">
-                            
-                        </div>
-                        <div class="nom">
-                            <h5>BAOBAB DE MAHAJANGA</h5>
-                            <h6 style="font-size: medium;">RAKOTO JEAN</h6>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="vue">
-                            <a href="#" >VOIR DETAIL</a>
-                            </div>
-                        <div class="s1">
-                            <img class="im" src="<?php echo base_url('assets/detail_artiste/image/baobab.png') ?>" alt="tsisy">
-                            
-                        </div>
-                        <div class="nom">
-                            <h5>BAOBAB DE MAHAJANGA</h5>
-                            <h6 style="font-size: medium;">RAKOTO JEAN</h6>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="vue">
-                            <a href="#" >VOIR DETAIL</a>
-                            </div>
-                        <div class="s1">
-                            <img class="im" src="<?php echo base_url('assets/detail_artiste/image/baobab.png') ?>" alt="tsisy">
-                            
-                        </div>
-                        <div class="nom">
-                            <h5>BAOBAB DE MAHAJANGA</h5>
-                            <h6 style="font-size: medium;">RAKOTO JEAN</h6>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
-        <div class="row">
-        <nav class="pagination-outer" aria-label="Page navigation">
-        <ul class="pagination">
-            <li class="page-item">
-                <a href="#" class="page-link" aria-label="Previous">
-                    <span aria-hidden="true">«</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item active"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item">
-                <a href="#" class="page-link" aria-label="Next">
-                    <span aria-hidden="true">»</span>
-                </a>
-            </li>
-        </ul>
-        </nav>
-        </div>
+        <?=$this->pagination_bootstrap->render();?>
     </div>
     <footer>
     <div class="footer" id="foote">
@@ -277,7 +135,6 @@
             Revenir en haut
           </span></a>
         </div>
-
     </div>
     </footer>
 </body>
