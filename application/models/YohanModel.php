@@ -12,7 +12,7 @@ class YohanModel extends CI_Model
     }
 
     public function get_painting_by_id($idpainting){
-        $result=$this->db->query("select * from painting where idpainting=".$idpainting);
+        $result=$this->db->query("select * from view_artist_painting where idpainting=".$idpainting);
         $result=$result->result_array();
         $this->db->close();
         return $result[0];

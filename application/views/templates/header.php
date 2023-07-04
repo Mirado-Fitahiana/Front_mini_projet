@@ -10,8 +10,8 @@
             <!-- Navbar brand -->
             <a style="height: 72px;" class="navbar-brand mt-2 mt-lg-0" href="#">
                 <img
-                src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                height="15"
+                src="<?php echo base_url("assets/header/image/logo.png")?>"
+                height="80px"
                 alt="MDB Logo"
                 loading="lazy"
                 />
@@ -41,7 +41,7 @@
             <!-- Right elements -->
             <div class="d-flex align-items-center">
             <!-- Icon -->
-            <a class="text-reset me-3" href="#">
+            <a class="text-reset me-3" href="<?php echo base_url('Yohan/monPanier');?>">
                 <i style="color: rgba(169,99,74,1);" class="fas fa-shopping-cart"></i>
             </a>
             </div>

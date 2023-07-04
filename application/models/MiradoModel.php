@@ -15,4 +15,17 @@ class MiradoModel extends CI_Model
         $this->db->close();
         return $result;
     }
+    public function get_artiste_by_id($idartiste){
+        $result = $this->db->query("select * FROM view_artist_painting where idartist=".$idartiste);
+        $result=$result->result_array();
+        $this->db->close();
+        return $result;
+    }
+    public function get_painting_by_id($idartiste){
+        $result = $this->db->query("select * FROM view_artist_painting where idpainting=".$idartiste);
+        $result=$result->result_array();
+        $this->db->close();
+        return $result;
+    }
+
 }

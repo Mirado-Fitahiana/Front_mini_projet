@@ -53,7 +53,14 @@
 </head>
 
 <body>
-    <?php ?>
+    <?php
+    if (isset($_SESSION)) {
+      var_dump($_SESSION);
+    }else{
+      echo "nothing";
+    }
+    
+    ?>
    
     <div class="container">
         <div class="titre">
@@ -67,12 +74,17 @@
         <div class="centre">
             <div class="row">
                 <?php
-                    foreach($result as $val) { ?>
+                  $count = 0;
+                    foreach($result as $val) {
+                      if ($count == 3) {?>
+                        </div> <br> <div class="row">
+                     <?php }
+                      ?>
                      
                        <div class="col-md-4">
                             <div class="a1">
                                 <div class="vue">
-                                    <a href="#">VOIR DETAIL</a>
+                                    <a href="<?php echo base_url('details/detail_tableau?idpaint='.$val->idpainting);?>">VOIR DETAIL</a>
                                 </div>
                                 <div class="s1">
                                     <img class="im" src="<?php echo base_url('assets/image')."/".$val->painting_image; ?>" alt="tsisy" >
@@ -85,17 +97,17 @@
                             </div>
                         </div>
                   <?php 
+                  $count = 1 + $count;
                     }  
                 ?>
             </div>
-            
         </div>
+        <br>
         <?=$this->pagination_bootstrap->render();?>
     </div>
     <footer>
     <div class="footer" id="foote">
         <div class="log">
-            <!-- <img id="HooSooDook" src="../HooSooDook__final_b.png" srcset="../HooSooDook__final_b.png 1x, ../HooSooDook__final_b@2x.png 2x"> -->
         </div>
         <div class="container all">
           

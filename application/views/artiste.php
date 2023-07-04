@@ -14,7 +14,6 @@
 <body>
     
     <div class="container" style="padding-top: 21px;">
-    
         <div class="row">
             <div class="col-lg-4">
                 <div class="gauche">
@@ -22,21 +21,20 @@
                         <div class="lg1">
                             <div class="lg2">
                                 <div class="imgAut">
-                                    <img class="id1" src="<?php echo base_url('assets/detail_artiste/image/Célia_rakotondrainy_noir.jpg') ?>" alt="tsisy" srcset="">
+                                    <img class="id1" src="<?php echo base_url('assets/image')."/".$artiste[0]['artist_image'] ?>" alt="tsisy" srcset="">
                                 </div>
                             </div>
                         </div>
                         <div class="nom">
-                            <h2>RAKOTONDRAINY Célia</h2>
+                            <h2><?php echo $artiste[0]['artistname'] ?></h2>
                         </div>
                         <hr>
                         <div class="lieu">
-                            <p><span style="color: rgba(145,139,134,1);">ANTANANARIVO MADAGASCAR</span></p>
+                            <p><span style="color: rgba(145,139,134,1);"><?php echo $artiste[0]['artist_adress'] ?></span></p>
                         </div>
                         <div class="descri">
                             <span>
-                                JEUNE ARTISTE ,CONNUE POUR SES OEUVRES <br>
-                                INSPIREES DES FAITS DE LA SOCIETE MALAGASY 
+                            <?php echo $artiste[0]['biographie'] ?>
                             </span>
                         </div>
                         <div class="imbas"></div>
@@ -57,81 +55,30 @@
                     </div>
                     <div class="del">
                         <div class="row">
+                            <?php
+                            $count = 0;       
+
+                            for ($i = 0 ; $i < count($artiste) ; $i++) {
+                               if ($count % 3 ==0) {?>
+                                </div><br><div class="row">
+                              <?php }
+                               ?>
                             <div class="col-sm fade-in" style="height: 300px;">
                                 <div class="art1">
-                                    <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/n_b0a3022f4b4d17d3e62e824919a8_bb.png') ?>" alt="" srcset="">
-                                    <a href="#" class="voir">VOIR DETAIL</a>
+                                    <img class="img1" src="<?php echo base_url('assets/image')."/".$artiste[$i]['painting_image'] ?>" alt="" srcset="">
+                                    <a href="<?php echo base_url('details/detail_tableau?idpaint='.$artiste[$i]['idpainting']) ?>" class="voir">VOIR DETAIL</a>
                                 </div>
                                 <div class="artTitle">
                                 
-                                        <h5 style="text-align: center;">VEHIVAVY MALAGASY</h5>
-                                        <h6 style="text-align: center;">RAKOTONDRAINY Célia</h6>
+                                        <h5 style="text-align: center;"><?php echo $artiste[$i]['paintingname'] ?></h5>
+                                        <h6 style="text-align: center;"><?php echo $artiste[$i]['artistname'] ?></h6>
                                     
                                 </div>
-                            </div>
-                            <div class="col-sm fade-in" style="height: 300px;">
-                                <div class="art1">
-                                    <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/n_b0a3022f4b4d17d3e62e824919a8_bb.png') ?>" alt="" srcset="">
-                                    <a href="#" class="voir">VOIR DETAIL</a>
-                                </div>
-                                <div class="artTitle">
-                                
-                                        <h5 style="text-align: center;">VEHIVAVY MALAGASY</h5>
-                                        <h6 style="text-align: center;">RAKOTONDRAINY Célia</h6>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-sm fade-in" style="height: 300px;">
-                                <div class="art1">
-                                    <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/n_b0a3022f4b4d17d3e62e824919a8_bb.png') ?>" alt="" srcset="">
-                                    <a href="#" class="voir">VOIR DETAIL</a>
-                                </div>
-                                <div class="artTitle">
-                                
-                                        <h5 style="text-align: center;">VEHIVAVY MALAGASY</h5>
-                                        <h6 style="text-align: center;">RAKOTONDRAINY Célia</h6>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm" style="height: 300px;">
-                                <div class="art1">
-                                    <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/n_b0a3022f4b4d17d3e62e824919a8_bb.png') ?>" alt="" srcset="">
-                                    <a href="#" class="voir">VOIR DETAIL</a>
-                                </div>
-                                <div class="artTitle">
-                                
-                                        <h5 style="text-align: center;">VEHIVAVY MALAGASY</h5>
-                                        <h6 style="text-align: center;">RAKOTONDRAINY Célia</h6>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-sm" style="height: 300px;">
-                                <div class="art1">
-                                    <img class="img1"  src="<?php echo base_url('assets/detail_artiste/image/n_b0a3022f4b4d17d3e62e824919a8_bb.png') ?>" alt="" srcset="">
-                                    <a href="#" class="voir">VOIR DETAIL</a>
-                                </div>
-                                <div class="artTitle">
-                                
-                                        <h5 style="text-align: center;">VEHIVAVY MALAGASY</h5>
-                                        <h6 style="text-align: center;">RAKOTONDRAINY Célia</h6>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-sm" style="height: 300px;">
-                                <div class="art1">
-                                    <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/n_b0a3022f4b4d17d3e62e824919a8_bb.png') ?>" alt="" srcset="">
-                                    <a href="#" class="voir">VOIR DETAIL</a>
-                                </div>
-                                <div class="artTitle">
-                                
-                                        <h5 style="text-align: center;">VEHIVAVY MALAGASY</h5>
-                                        <h6 style="text-align: center;">RAKOTONDRAINY Célia</h6>
-                                    
-                                </div>
-                            </div>
+                            </div> 
+                            <?php 
+                            $count = 1+$count;
+                            }
+                            ?>                       
                         </div>
                     </div>
                 </div>
