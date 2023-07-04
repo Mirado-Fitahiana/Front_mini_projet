@@ -1,0 +1,12 @@
+.paye1:hover {
+    cursor: pointer;
+}
+#master , #paypal ,#orange{
+    display: none;
+}
+
+.custom_2{  
+    margin-bottom: 15px !important;
+    width: fit-content;
+    margin: auto;
+ }

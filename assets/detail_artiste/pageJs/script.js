@@ -23,13 +23,11 @@ const imgcouleur = 'http://localhost/Projet_Baovola/assets/image/Célia_rakotond
 const imgnoir = 'http://localhost/Projet_Baovola/assets/image/Célia_rakotondrainy_noir.jpg';
 
 image.addEventListener('mouseenter', function() {
-  image.src = imgcouleur;
   image.style.transform = 'scale(1.1)';
   image.style.cursor = 'grab';
 });
 
 image.addEventListener('mouseleave', function() {
-  image.src = imgnoir;
   image.style.transform = 'scale(1)';
 });
 

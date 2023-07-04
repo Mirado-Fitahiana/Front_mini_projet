@@ -11,15 +11,18 @@
     <link rel="stylesheet" href="<?php echo site_url('assets/fandresena/css/Fandresena.css'); ?>">
 </head>
 
-<body class="p-5 custom">
+<body >
     <div class="container">
+            <?php
+            var_dump($_SESSION);
+            ?>
         <div>
             <p class="small">La vente de ce tableau permettra d'offrir un kit scolaire à un enfant</p>
         </div>
         <div class="row">
             <div class="col-8 p-3 image_content">
                 <div class="warning m-3">
-                    <img src="<?php echo site_url('assets/fandresena/img/n_4646626_polish-20210623-2205@2x.png'); ?>" class="Cadreur">
+                    <img src="<?php echo site_url('assets/image')."/".$artiste[0]['painting_image'] ?>" class="Cadreur" >
                 </div>
                 <div class="cadre p-3">
                     <div class="row m-auto">
@@ -43,44 +46,34 @@
             </div>
             <div class="col-md-6 col-xxl-5 p-3">
                 <div>
-                    <p class="h6 title">BAOBAB</p>
+                    <p class="h6 title"><?php echo $artiste[0]['paintingname'] ?></p>
                 </div>
                 <div class="p-3">
                     <div class="row">
-                        <div class="col-xxl-2"><img src="<?php echo site_url('assets/img/n_b490460fe517175d0e866e8cf2d0@2x.png'); ?>"></div>
+                        <div class="sary_kely"><img src="<?php echo site_url('assets/image')."/".$artiste[0]['artist_image'] ?>"></div>
                         <div class="col align-items-center m-auto p-1">
                             <div>
-                                <p class="name"><strong><span style="color: rgb(82, 82, 82); background-color: rgb(242, 242, 242);">RAKOTOZAFY BERTINE</span></strong></p>
+                                <p class="name"><strong><span style="color: rgb(82, 82, 82); background-color: rgb(242, 242, 242);"><?php echo $artiste[0]['artistname'] ?></span></strong></p>
                             </div>
                             <div><i class="fas fa-globe-americas"></i></div>
                         </div>
                     </div>
                 </div>
-                <div><p>L&#39;allée des baobabs de Morondava est une merveille naturelle où de majestueux baobabs bordent une route rouge, créant un paysage à couper le souffle.</p></div>
+                <div><p><?php echo $artiste[0]['description'] ?></p></div>
                 <div class="mx-4">
                     <p style="font-family: Merriweather, serif;"><strong><span style="color: rgb(0, 0, 0); background-color: rgb(242, 242, 242);">90 x 120 cm</span></strong></p>
                 </div>
                 <div class="mx-3">
-                    <p style="font-family: Merriweather, serif;"><strong><span style="color: rgb(0, 0, 0); background-color: rgb(242, 242, 242);">PRIX : 1 000 000 AR</span></strong></p>
+                    <p style="font-family: Merriweather, serif;"><strong><span style="color: rgb(0, 0, 0); background-color: rgb(242, 242, 242);">PRIX : <?php echo $artiste[0]['price'] ?> AR</span></strong></p>
                 </div>
-                <div>
-                    <div class="row text-center">
-                        <div class="col">
-                            <div>
-                                <p style="font-size: 10px;"><strong><span style="color: rgb(0, 0, 0); background-color: rgb(242, 242, 242);">CONVERTIR EN DOLLAR</span></strong></p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div>
-                                <p style="font-size: 10px;"><strong><span style="color: rgb(0, 0, 0);">CONVERTIR EN EURO</span></strong></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
                 <div>
                     <div class="row text-center">
                         <div class="col p-2"><button class="btn btn-primary btn-custom" type="button"><strong>RENDU&nbsp;SUR VOTRE MUR</strong></button></div>
-                        <div class="col p-2"><button class="btn btn-primary btn-custom-2" type="button"><strong>ACHETER&nbsp; LE TABLEAU</strong></button></div>
+                        <a href="<?php echo base_url('Yohan/add_Cart?idtab='.$artiste[0]['idpainting']) ?>">
+                        <div class="col p-2"><button class="btn btn-primary btn-custom-2" type="button">
+                           <strong>ACHETER&nbsp; LE TABLEAU</strong>
+                        </button></div></a>
                     </div>
                 </div>
             </div>

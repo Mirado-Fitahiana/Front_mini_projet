@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-    <title><?php echo $title; ?></title>
+    <title>Hoosdook</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="<?php echo base_url('assets/header/index.css') ;?>" rel="stylesheet" type="text/css"  />
     <link href="<?php echo base_url('assets/header/fontawesome-5/css/all.css') ;?>" rel="stylesheet">
@@ -22,7 +22,7 @@
             <img src="<?php echo base_url('assets/header/image/logo.png') ?>" alt="">
             </div>
             <ul class="main-menu">
-            <li><a href="Mirado/tableau">Tableau</a></li>
+            <li><a href=<?php echo base_url('Mirado/tableau')?>>Tableau</a></li>
             <li><a href="<?php echo base_url('Details/liste_artiste');?>">Artistes</a></li>
             <li><a href="#contenue">A propos</a></li>
             <li><a href="#footer">Contact</a></li>
@@ -31,7 +31,7 @@
             <ul class="right-menu">
             <li><input type="text" name="" id="" class="search" placeholder="Rechercher"></li>
             <li><a href="#"><i class="fa fa-search"></i></a></li>
-            <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+            <li><a href="<?php echo base_url('Yohan/monPanier')?>"><i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
     </div>

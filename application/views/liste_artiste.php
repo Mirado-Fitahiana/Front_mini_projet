@@ -32,76 +32,32 @@
         </div>
         <div class="centre">
             <div class="row">
-                <div class="col-md-4">
+                <?php
+                $count = 0;       
+
+                for ($i = 0 ; $i < count($artiste) ; $i++) {
+                   if ($count % 3 ==0) {?>
+                    </div><br><div class="row">
+                  <?php }
+                   ?>
+                <div class="col-md-4">              
                     <div class="a1">
                         <div class="s1">
-                            <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/dadabe.png') ?>" alt="tsisy">
+                            <a href="<?php echo base_url('details/index?idartist='.$artiste[$i]['idartist']) ?>"><img class="img1" src="<?php echo base_url('assets/image')."/".$artiste[$i]['image'] ?>" alt="tsisy"></a>
                         </div>
                         <div class="nom">
-                            <h5>RAKOTO JEAN</h5>
-                            <h6>Madagasikara</h6>
+                            <h5><?php echo $artiste[$i]['artistname']; ?></h5>
+                            <h6><?php echo $artiste[$i]['adress']; ?></h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="s1">
-                            <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/dadabe.png') ?>" alt="tsisy">
-                        </div>
-                        <div class="nom">
-                            <h5>RAKOTO JEAN</h5>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="s1">
-                            <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/dadabe.png') ?>" alt="tsisy">
-                        </div>
-                        <div class="nom">
-                            <h5>RAKOTO JEAN</h5>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
+                <?php 
+            $count = 1+$count;
+            }
+             ?>
             </div>
             <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="s1">
-                            <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/dadabe.png') ?>" alt="tsisy">
-                        </div>
-                        <div class="nom">
-                            <h5>RAKOTO JEAN</h5>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="s1">
-                            <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/dadabe.png') ?>" alt="tsisy">
-                        </div>
-                        <div class="nom">
-                            <h5>RAKOTO JEAN</h5>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="a1">
-                        <div class="s1">
-                            <img class="img1" src="<?php echo base_url('assets/detail_artiste/image/dadabe.png') ?>" alt="tsisy">
-                        </div>
-                        <div class="nom">
-                            <h5>RAKOTO JEAN</h5>
-                            <h6>Madagasikara</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     
